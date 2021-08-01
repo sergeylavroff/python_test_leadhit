@@ -10,5 +10,5 @@ def find_form(input):
         name = record.pop('name')
         record.pop('_id')
         if record.items() <= input.items():
-            return name
+            return name #Возвращаем первое заначение имени, соварь которго вошел в словарь запрашиваемой формы.
     return input

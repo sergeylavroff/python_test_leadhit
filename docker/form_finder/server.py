@@ -9,8 +9,8 @@ app = Flask(__name__)
 def get_form():
     incoming_fields = {}
     for i, j in request.form.items():
-        incoming_fields[i] = validate_feild(str(j).strip())
-    payload = find_form(incoming_fields)
+        incoming_fields[i] = validate_feild(str(j).strip()) #Валидация в файле validators.py
+    payload = find_form(incoming_fields) #Ищем с помощью функции из файла formfinder.py
     respond = jsonify(payload)
     respond.status_code = 200
     return respond
