@@ -7,6 +7,8 @@
 
 sudo docker-compose -f mongo-form-finder.yml up -d
 
+сервер запустится на порту 8088
+
 после первого запуска предлагаю произвести первичное заполнение базы тестовыми записями:
 
 python initial_base.py
